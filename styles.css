@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px; 
+    background-color: #b6b0a7; 
+    color: #333;  
+    text-align: center;
+    width: 500px;
+    height: 400px;
+  }
+  
+h1 {
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #000; 
+  margin-top: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 8px; 
+  background: linear-gradient(90deg, #6a11cb, #2575fc); 
+  border-radius: 5px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+h1:hover {
+  color: #6d6d6b; 
+  transition: color 0.3s ease;
+}
+
+  
+
+button {
+  padding: 10px 20px; 
+  margin: 10px;
+  font-size: 16px; 
+  cursor: pointer;
+  border: none; 
+  border-radius: 8px; 
+  background: linear-gradient(145deg, #6a11cb, #2575fc); 
+  color: white; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  background: linear-gradient(145deg, #2575fc, #6a11cb); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+button:active {
+  background: linear-gradient(145deg, #2575fc, #6a11cb); 
+  transform: translateY(2px); 
+}
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    margin: 5px 0;
+  }
+  #savedTabsList{
+    max-height: 280px;
+    overflow-y: scroll;
+  }
+  #savedTabsList::-webkit-scrollbar {
+    display: none; 
+  }
+
+  #savedTabsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; 
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #savedTabsList li:hover {
+    background-color: #ddd;
+     border-radius: 5px;
+          
+  }
+  
+  
+  #savedTabsList li strong {
+    flex: 1; 
+    max-width: 20%;
+    font-size: medium;
+    cursor: default;
+    
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    text-align: left;
+  }
+  
+  
+  #savedTabsList li a {
+    flex: 2; 
+    max-width: 70%;
+    
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+  }
+  #divider{
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .deleteBtn {
+    cursor: pointer;
+    background: linear-gradient(145deg, #f44336, #e57373);
+    color: white;
+    padding: 5px 8px; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px;   
+    text-align: center;
+    display: inline-block;
+    font-weight: bold; 
+    text-transform: uppercase;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+  }
+  
+  .deleteBtn:hover {
+    background: linear-gradient(145deg, #e57373, #f44336); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); 
+  }
+  
+  .deleteBtn:active {
+    background: linear-gradient(145deg, #d32f2f, #c62828);
+    transform: scale(1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  

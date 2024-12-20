@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Save Tabs",
+  "version": "1.0",
+  "description": "Save your current tabs for later use.",
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Abhishek1.png",
+      "36": "Abhishek4.png",
+      "48": "Abhishek2.png",
+      "128": "Abhishek3.png"
+    }
+  }
+}
